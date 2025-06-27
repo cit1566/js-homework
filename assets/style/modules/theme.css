@@ -42,11 +42,20 @@
   color-scheme: light dark;
 }
 
-@keyframes bounce {
+@keyframes bounce_h1 {
   0% {
     transform: translateY(0px);
   }
   100% {
     transform: translateY(-12px);
+  }
+}
+
+@keyframes bounce_h2 {
+  0% {
+    transform: translateY(-5px);
+  }
+  100% {
+    transform: translateY(0px);
   }
 }
