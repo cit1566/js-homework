@@ -62,7 +62,7 @@ h1 {
   }
 }
 
-@media (width>650px) {
+@media (width>800px) {
   .main-container {
     display: flex;
     flex-flow: row nowrap;
