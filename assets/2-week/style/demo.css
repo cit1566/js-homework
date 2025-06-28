@@ -1,0 +1,34 @@
+body {
+  background: var(--purple-300);
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--black);
+  /* overflow: visible; */
+}
+
+.display-box {
+  width: 375px;
+  height: 812px;
+  background: var(--white);
+
+  .header {
+    padding: 45px 0 16px 0;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--gray-100);
+
+    h1 {
+      font-size: 1rem;
+      margin-left: 20px;
+      align-content: center;
+    }
+
+    .menu-bar {
+      margin-right: 20px;
+      cursor: pointer;
+    }
+  }
+}

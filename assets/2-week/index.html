@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="../images/JavaScript.png" />
+    <link rel="stylesheet" href="./style/main.css" />
+    <title>Accordion</title>
+  </head>
+  <body>
+    <div class="display-box">
+      <div class="header" aria-label="header">
+        <h1>피그마 튜터</h1>
+        <div class="menu-bar">
+          <svg
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <title>메뉴</title>
+            <path
+              d="M3 12H21"
+              stroke="black"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path
+              d="M3 6H21"
+              stroke="black"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path
+              d="M3 18H21"
+              stroke="black"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </div>
+      </div>
+      <div class="question-box">
+        <h2>자주 묻는 질문</h2>
+        <div class="question-accordion-box">
+          <div class="accordion hidden" aria-label="질문 1">
+            <div class="show-accordion">
+              <button class="show-button">
+                <span>
+                  텍스트 바꾸기 좋은 피그마 플러그인은 뭐가 있을까요?
+                  추천해주세요.
+                  <img
+                    src="./image/chevron.png"
+                    alt="글 더 보기 버튼"
+                    width="24"
+                    height="24"
+                  />
+                </span>
+              </button>
+            </div>
+            <div class="hide-accordion">
+              <p>
+                font replacer를 사용해 보세요. 미리보기 기능을 지원해서 편의성
+                짱짱짱입니다.
+              </p>
+            </div>
+          </div>
+          <div class="accordion hidden" aria-label="질문 1"></div>
+        </div>
+      </div>
+    </div>
+    <script src="./scripts/main.js"></script>
+  </body>
+</html>

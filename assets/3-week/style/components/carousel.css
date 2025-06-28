@@ -1,0 +1,151 @@
+.game-box {
+  width: 384px;
+  height: 372px;
+  background-color: var(--white);
+  border-radius: 1rem;
+  margin: 50px auto;
+
+  .title-box {
+    padding-block: 14px;
+    padding-inline-start: 10px;
+    display: block;
+    width: 100%;
+    height: 61px;
+  }
+
+  .content-show-box {
+    overflow: hidden;
+    width: 336px;
+    margin-left: 24px;
+    padding-block: 3px;
+  }
+
+  .content-container {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    gap: 16px;
+    width: 1040px;
+    margin-left: 0px;
+    padding: 0;
+    transition: all 0.8s ease-in-out;
+
+    .content-list {
+      display: contents;
+      list-style-type: none;
+    }
+  }
+
+  .control-box {
+    /* background-color: green; */
+    color: var(--black);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 62px;
+    gap: 12px;
+
+    P {
+      text-align: center;
+      font-size: 18px;
+    }
+  }
+}
+
+.content-list {
+  /* 크로노 오디세이 */
+  &:nth-of-type(1) .img-box {
+    span {
+      background: url(../../img/clnCh.png);
+      background-repeat: no-repeat;
+      background-size: 160px 172px;
+      /* background-position: left 0 top 4px; */
+    }
+
+    &::after {
+      content: "";
+      background: url(../../img/clnBg.png);
+      background-repeat: no-repeat;
+      background-size: 160px 160px;
+    }
+  }
+
+  /* 아키에이지 워 */
+  &:nth-of-type(2) .img-box {
+    span {
+      background: url(../../img/akCh.png);
+      background-repeat: no-repeat;
+      background-size: 160px 172px;
+    }
+
+    &::after {
+      content: "";
+      background: url(../../img/akBg.png);
+      background-repeat: no-repeat;
+      background-size: 160px 160px;
+    }
+  }
+
+  /* 패스오브 엑자일2 */
+  &:nth-of-type(3) .img-box {
+    span {
+      background: url(../../img/passCh.png);
+      background-repeat: no-repeat;
+      background-size: 160px 172px;
+    }
+
+    &::after {
+      content: "";
+      background: url(../../img/passBg.png);
+      background-repeat: no-repeat;
+      background-size: 160px 160px;
+    }
+  }
+
+  /* 오딘 */
+  &:nth-of-type(4) .img-box {
+    span {
+      background: url(../../img/odinCh.png);
+      background-repeat: no-repeat;
+      background-size: 160px 172px;
+    }
+
+    &::after {
+      content: "";
+      background: url(../../img/odinBg.png);
+      background-repeat: no-repeat;
+      background-size: 160px 160px;
+    }
+  }
+
+  /* 롬 리멤버~ */
+  &:nth-of-type(5) .img-box {
+    span {
+      background: url(../../img/tomcharacter.png);
+      background-repeat: no-repeat;
+      background-size: 160px 172px;
+    }
+
+    &::after {
+      content: "";
+      background: url(../../img/tom.png);
+      background-repeat: no-repeat;
+      background-size: 160px 160px;
+    }
+  }
+  &:nth-of-type(6) .img-box {
+    span {
+      background: url(../../img/bgCaracter.png);
+      background-repeat: no-repeat;
+      background-size: 160px 172px;
+    }
+
+    &::after {
+      content: "";
+      background: url(../../img/bgBackground.png);
+      background-repeat: no-repeat;
+      background-size: 160px 160px;
+    }
+  }
+}
