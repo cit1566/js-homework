@@ -7,12 +7,14 @@
   grid-template-columns: repeat(5, 1fr);
   grid-template-rows: repeat(7, 1fr);
   padding: 4.125rem 9.6875rem 4.125rem 4.125rem;
+  position: relative;
 
-  & .item:nth-child(1) {
+  & .item:nth-of-type(1) {
     background: var(--color-red);
     border-radius: 0 50% 50% 50%;
     position: relative;
     grid-column: 5;
+
     &::after {
       content: "";
       position: absolute;
@@ -24,7 +26,7 @@
       left: 25%;
     }
   }
-  & .item:nth-child(2) {
+  & .item:nth-of-type(2) {
     /* background-color: var(--color-red); */
     grid-column: 2/4;
     border: 0.1875rem solid var(--color-red);
@@ -42,20 +44,20 @@
       left: 7.8125rem;
     }
   }
-  & .item:nth-child(3) {
+  & .item:nth-of-type(3) {
     background-color: var(--color-black);
     border-radius: 0 100% 0 0;
   }
-  & .item:nth-child(4) {
+  & .item:nth-of-type(4) {
     background-color: var(--color-yellow);
     border-radius: 50%;
   }
-  & .item:nth-child(5) {
+  & .item:nth-of-type(5) {
     grid-column: 2/3;
     background-color: var(--color-red);
     border-radius: 50%;
   }
-  & .item:nth-child(6) {
+  & .item:nth-of-type(6) {
     grid-column: 3/5;
     grid-row: 3/5;
     background-color: var(--color-red);
@@ -73,11 +75,11 @@
       background-repeat: no-repeat;
     }
   }
-  & .item:nth-child(7) {
+  & .item:nth-of-type(7) {
     background-color: var(--color-orange);
     border-radius: 100% 0 0 0;
   }
-  & .item:nth-child(8) {
+  & .item:nth-of-type(8) {
     background: var(--color-red);
     border-radius: 50%;
     position: relative;
@@ -93,20 +95,20 @@
       background: var(--white);
     }
   }
-  & .item:nth-child(9) {
+  & .item:nth-of-type(9) {
     background-color: var(--color-black);
     border-radius: 0 0 0 100%;
   }
-  & .item:nth-child(10) {
+  & .item:nth-of-type(10) {
     background-color: var(--color-brown);
     border-radius: 0 0 0 100%;
   }
-  & .item:nth-child(11) {
+  & .item:nth-of-type(11) {
     grid-column: 2/3;
     background-color: var(--color-lightGray);
     border-radius: 0 0 0 100%;
   }
-  & .item:nth-child(12) {
+  & .item:nth-of-type(12) {
     grid-column: 3/5;
     background-color: var(--color-red);
     border-radius: 0 0 7.3213rem 7.3213rem;
@@ -122,7 +124,7 @@
       border-radius: 0 0 4.0625rem 4.0625rem;
     }
   }
-  & .item:nth-child(13) {
+  & .item:nth-of-type(13) {
     grid-column: 5;
     grid-row: 5/7;
     background-color: var(--color-red);
@@ -141,7 +143,7 @@
       border-radius: 60px;
     }
   }
-  & .item:nth-child(14) {
+  & .item:nth-of-type(14) {
     grid-column: 2/3;
     border: 2px solid var(--color-red);
     border-radius: 50%;
@@ -158,7 +160,7 @@
     }
   }
 
-  & .item:nth-child(15) {
+  & .item:nth-of-type(15) {
     background-color: var(--color-lightGray);
     grid-column: 3/5;
     border-radius: 117.15px;
@@ -175,7 +177,7 @@
     }
   }
 
-  & .item:nth-child(16) {
+  & .item:nth-of-type(16) {
     grid-column: 2/3;
     background-color: var(--color-orange);
     width: 63px;

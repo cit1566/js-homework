@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
   // 가운데 중심 이미지
-  gsap.from(".item:nth-child(6)", {
+  gsap.from(".item:nth-of-type(6)", {
     scale: 0,
     duration: 0.6,
     ease: "back.out(1.7)",
@@ -8,22 +8,22 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // 상하좌우 순서로 조립되는 애니메이션
   const animations = [
-    { selector: ".item:nth-child(1)", x: 300 },
-    { selector: ".item:nth-child(2)", y: 300 },
-    { selector: ".item:nth-child(3)", x: -300 },
-    { selector: ".item:nth-child(4)", y: -300 },
-    { selector: ".item:nth-child(5)", x: 300 },
+    { selector: ".item:nth-of-type(1)", x: 300 },
+    { selector: ".item:nth-of-type(2)", y: 300 },
+    { selector: ".item:nth-of-type(3)", x: -300 },
+    { selector: ".item:nth-of-type(4)", y: -300 },
+    { selector: ".item:nth-of-type(5)", x: 300 },
     // 중심 이미지 (6) 이미 위에서 등장
-    { selector: ".item:nth-child(7)", x: -300 },
-    { selector: ".item:nth-child(8)", y: 300 },
-    { selector: ".item:nth-child(9)", y: -300 },
-    { selector: ".item:nth-child(10)", x: 300 },
-    { selector: ".item:nth-child(11)", y: 300 },
-    { selector: ".item:nth-child(12)", x: -300 },
-    { selector: ".item:nth-child(13)", y: -300 },
-    { selector: ".item:nth-child(14)", x: 300 },
-    { selector: ".item:nth-child(15)", y: 300 },
-    { selector: ".item:nth-child(16)", x: -300 },
+    { selector: ".item:nth-of-type(7)", x: -300 },
+    { selector: ".item:nth-of-type(8)", y: 300 },
+    { selector: ".item:nth-of-type(9)", y: -300 },
+    { selector: ".item:nth-of-type(10)", x: 300 },
+    { selector: ".item:nth-of-type(11)", y: 300 },
+    { selector: ".item:nth-of-type(12)", x: -300 },
+    { selector: ".item:nth-of-type(13)", y: -300 },
+    { selector: ".item:nth-of-type(14)", x: 300 },
+    { selector: ".item:nth-of-type(15)", y: 300 },
+    { selector: ".item:nth-of-type(16)", x: -300 },
   ];
 
   // 순차적으로 조립되는 효과
