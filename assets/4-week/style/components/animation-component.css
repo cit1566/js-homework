@@ -1,0 +1,196 @@
+.design-box {
+  width: 52.875rem;
+  height: 62.0625rem;
+  /* background-color: blue; */
+
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(7, 1fr);
+  padding: 4.125rem 9.6875rem 4.125rem 4.125rem;
+
+  & .item:nth-child(1) {
+    background: var(--color-red);
+    border-radius: 0 50% 50% 50%;
+    position: relative;
+    grid-column: 5;
+    &::after {
+      content: "";
+      position: absolute;
+      width: 3.75rem;
+      aspect-ratio: 1;
+      background: var(--white);
+      border-radius: 50%;
+      top: 25%;
+      left: 25%;
+    }
+  }
+  & .item:nth-child(2) {
+    /* background-color: var(--color-red); */
+    grid-column: 2/4;
+    border: 0.1875rem solid var(--color-red);
+    border-radius: 7.3213rem;
+    position: relative;
+
+    &::after {
+      content: "";
+      width: 3.75rem;
+      height: 6.875rem;
+      background-color: var(--color-red);
+      border-radius: 6.875rem 0 0 6.875rem;
+      position: absolute;
+      top: 0.2188rem;
+      left: 7.8125rem;
+    }
+  }
+  & .item:nth-child(3) {
+    background-color: var(--color-black);
+    border-radius: 0 100% 0 0;
+  }
+  & .item:nth-child(4) {
+    background-color: var(--color-yellow);
+    border-radius: 50%;
+  }
+  & .item:nth-child(5) {
+    grid-column: 2/3;
+    background-color: var(--color-red);
+    border-radius: 50%;
+  }
+  & .item:nth-child(6) {
+    grid-column: 3/5;
+    grid-row: 3/5;
+    background-color: var(--color-red);
+    border-radius: 50% 0 50% 50%;
+    position: relative;
+    overflow: hidden;
+    &::after {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 130%;
+      background-image: url(../../img/people-01.png);
+      background-size: 100% 100%;
+      background-position: 0 -1.875rem;
+      background-repeat: no-repeat;
+    }
+  }
+  & .item:nth-child(7) {
+    background-color: var(--color-orange);
+    border-radius: 100% 0 0 0;
+  }
+  & .item:nth-child(8) {
+    background: var(--color-red);
+    border-radius: 50%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &::after {
+      content: "";
+      width: 3.75rem;
+      aspect-ratio: 1;
+      border-radius: 50%;
+      position: absolute;
+      background: var(--white);
+    }
+  }
+  & .item:nth-child(9) {
+    background-color: var(--color-black);
+    border-radius: 0 0 0 100%;
+  }
+  & .item:nth-child(10) {
+    background-color: var(--color-brown);
+    border-radius: 0 0 0 100%;
+  }
+  & .item:nth-child(11) {
+    grid-column: 2/3;
+    background-color: var(--color-lightGray);
+    border-radius: 0 0 0 100%;
+  }
+  & .item:nth-child(12) {
+    grid-column: 3/5;
+    background-color: var(--color-red);
+    border-radius: 0 0 7.3213rem 7.3213rem;
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 7.8125rem;
+      aspect-ratio: 2/1;
+      background-color: var(--white);
+      left: 25%;
+      border-radius: 0 0 4.0625rem 4.0625rem;
+    }
+  }
+  & .item:nth-child(13) {
+    grid-column: 5;
+    grid-row: 5/7;
+    background-color: var(--color-red);
+    border-radius: 119px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 50px;
+      height: 160px;
+      background-color: var(--white);
+      border-radius: 60px;
+    }
+  }
+  & .item:nth-child(14) {
+    grid-column: 2/3;
+    border: 2px solid var(--color-red);
+    border-radius: 50%;
+    position: relative;
+    &::after {
+      content: "";
+      position: absolute;
+      width: 50%;
+      aspect-ratio: 1;
+      border: 1px solid var(--color-red);
+      border-radius: 50%;
+      left: 25%;
+      top: 25%;
+    }
+  }
+
+  & .item:nth-child(15) {
+    background-color: var(--color-lightGray);
+    grid-column: 3/5;
+    border-radius: 117.15px;
+    position: relative;
+    &::after {
+      content: "";
+      width: 59.5px;
+      height: 110px;
+      background: var(--white);
+      position: absolute;
+      top: 7px;
+      left: 125px;
+      border-radius: 110px 0 0 110px;
+    }
+  }
+
+  & .item:nth-child(16) {
+    grid-column: 2/3;
+    background-color: var(--color-orange);
+    width: 63px;
+
+    border-radius: 117px 0 0 117px;
+
+    position: relative;
+    &::after {
+      content: "";
+      position: absolute;
+      background-color: var(--color-yellow);
+      width: 62.5px;
+      height: 100%;
+      left: 63px;
+      border-radius: 117px 0 0 117px;
+    }
+  }
+}

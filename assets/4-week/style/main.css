@@ -1,0 +1,9 @@
+@layer base ,normalize  ,theme ,demo, animationStyle;
+
+@import "../../style/common/base.css" layer(base);
+@import "../../style/common/normalize.css" layer(normalize);
+@import "./theme.css" layer(theme);
+@import "./demo.css" layer(demo);
+
+/* component */
+@import "./components/animation-component.css" layer(animationStyle);
