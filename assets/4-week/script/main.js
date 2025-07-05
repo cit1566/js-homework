@@ -29,8 +29,8 @@ document.addEventListener("DOMContentLoaded", () => {
   // 순차적으로 조립되는 효과
   animations.forEach((anim, i) => {
     gsap.from(anim.selector, {
-      x: anim.x || 0,
-      y: anim.y || 0,
+      x: anim.x,
+      y: anim.y,
       opacity: 0,
       scale: 0.5,
       delay: 0.2 + i * 0.1,
