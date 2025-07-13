@@ -1,0 +1,52 @@
+:root {
+  font-family: Pretendard, Helvetica, Arial, sans-serif;
+  line-height: 1.45;
+  background-color: var(--purple-900);
+  color: var(--white);
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  min-width: 100vw;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 15em 1fr;
+  grid-template-rows: 1fr 15em 1fr;
+  grid-template-areas:
+    "top-left top top-right"
+    "left center right"
+    "bottom-left bottom bottom-right";
+
+  & > * + * {
+    justify-self: center;
+    align-self: center;
+  }
+
+  h1 {
+    grid-area: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.25rem;
+    font-weight: bold;
+    line-height: 1;
+
+    :nth-child(4n + 1) {
+      color: var(--green-500);
+    }
+    :nth-child(4n + 2) {
+      color: var(--yellow-500);
+    }
+    :nth-child(4n + 3) {
+      color: var(--purple-500);
+    }
+    :nth-child(4n + 4) {
+      color: var(--pink-500);
+    }
+  }
+}
